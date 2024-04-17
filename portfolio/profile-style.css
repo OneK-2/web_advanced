@@ -1,0 +1,33 @@
+.nav-items div {
+  display: flex;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 10%;
+}
+.logo {
+  display: flex;
+  margin-left: 10%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.intro-img {
+  background-image: url("./images/profile_dog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+.inrto-txt {
+  padding: auto;
+}
+.introduce div {
+  margin: 20px;
+  display: inline-block;
+}
