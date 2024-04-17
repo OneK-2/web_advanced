@@ -4,20 +4,17 @@ html {
   font-style: normal;
 }
 
-.nav-items div {
-  display: flex;
-}
 .nav-items {
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin-right: 10%;
 }
-.logo {
+.top-logo {
   display: flex;
   margin-left: 10%;
 }
-nav {
+.top-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
