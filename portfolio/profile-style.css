@@ -44,3 +44,34 @@ nav {
 .name {
   color: rgb(135, 206, 250);
 }
+/* 테크 스택 */
+.techStack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  gap: 50px;
+  justify-content: stretch;
+  align-content: stretch;
+  place-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.icon {
+  width: 100px; /* 아이콘 너비 */
+  height: 100px; /* 아이콘 높이 */
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.title-txt {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
