@@ -1,3 +1,9 @@
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .nav-items div {
   display: flex;
 }
@@ -15,19 +21,26 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
+.introduce {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
 .intro-img {
-  background-image: url("./images/profile_dog.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100px;
-  height: 100px;
+  max-width: 100%;
+  height: auto;
 }
-.inrto-txt {
-  padding: auto;
+.intro-txt {
+  margin-left: 100px;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
-.introduce div {
-  margin: 20px;
-  display: inline-block;
+.name {
+  color: rgb(135, 206, 250);
 }

@@ -53,5 +53,64 @@
     <div class="box">
       <h2>box Model 연습</h2>
     </div>
+
+    <div class="posiTest">
+      <span class="top">top</span>
+      <span class="right">right</span>
+      <span class="bottom">bottom</span>
+      <div class="left">left</div>
+    </div>
+
+    <!-- z-index는 화면의 z축 위아래 배치 -->
+    <style>
+      .posiTest div,
+      .posiTest span {
+        background-color: yellow;
+        border: 1px solid red;
+      }
+      .top {
+        position: relative;
+        top: 5px;
+        z-index: 1;
+      }
+      .right {
+        position: relative;
+        right: 5px;
+      }
+      .bottom {
+        position: relative;
+        bottom: 5px;
+      }
+      .left {
+        position: relative;
+        left: 5px;
+      }
+    </style>
+    <section style="padding: 10px">
+      <div className="border:solid 1px">
+        <div id="absolute">absolute</div>
+      </div>
+      <div id="parent">
+        <div id="child">children</div>
+      </div>
+
+      <style>
+        #absolute {
+          background: yellow;
+          position: absolute;
+          right: 0;
+        }
+
+        #parent {
+          position: relative;
+          background: skyblue;
+        }
+
+        #child {
+          position: absolute;
+          bottom: 0px;
+        }
+      </style>
+    </section>
   </body>
 </html>
