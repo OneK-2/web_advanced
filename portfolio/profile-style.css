@@ -3,12 +3,20 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
 }
+body {
+  min-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 .nav-items {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  margin-right: 10%;
+}
+.nav-items li a {
+  text-decoration-line: none;
+  color: black;
 }
 .top-logo {
   display: flex;
@@ -16,9 +24,9 @@ html {
 }
 .top-nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 100px;
+  flex-wrap: wrap;
+  padding: 40px 10px;
 }
 
 .introduce {
@@ -39,13 +47,20 @@ html {
   align-items: center;
 }
 .name {
-  color: rgb(135, 206, 250);
+  background: linear-gradient(
+    120deg,
+    #13b0f5 -2.06%,
+    #e353f7 100%
+  ); /*deg는 그라데이션 각도*/
+  background-clip: text;
+  color: transparent;
 }
 /* 테크 스택 */
 .techStack {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 300px;
 }
 
 .icon-grid {
@@ -67,8 +82,74 @@ html {
   justify-content: stretch;
   align-items: stretch;
 }
+.icon img {
+  width: 100%;
+}
 .title-txt {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
+  padding-bottom: 50px;
+}
+/*프로젝트*/
+.projectContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 0 150px;
+}
+
+.project-items {
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.project-thumbnail {
+  width: 100%;
+  height: 256px;
+  /* 위쪽 둥글게 둥글게 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* 배경 이미지 가운데 정렬, 가득차게 */
+  background-image: url("https://source.unsplash.com/random/400×400");
+  background-position: center;
+  background-size: cover;
+}
+.project-content {
+  padding: 30px;
+  /* 세로 간격(gap)을 일정하게 주기 위해 flex 적용 */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project-content h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.project-desc {
+  font-size: 18px;
+  font-weight: 300;
+}
+.project-tech-stack {
+  font-size: 16px;
+  font-weight: 400;
+}
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.project-link img {
+  height: 20px;
+}
+.project-link a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
 }
