@@ -156,3 +156,50 @@ body {
   line-height: 26px;
   text-decoration-line: underline;
 }
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px;
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 97px;
+  height: 59px;
+}
+.footer-contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  /* 텍스트 스타일 */
+  color: #42446e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer-contact a {
+  /* 기본속성으로 적용되어 있는 언더라인 제거 */
+  color: #42446e;
+  text-decoration: none;
+}
+.footer-sns {
+  display: flex;
+  gap: 20px;
+}
+.footer-sns img {
+  height: 20px;
+}
+.hr {
+  border: solid 1px;
+  width: 100%;
+  margin: 10px;
+}
