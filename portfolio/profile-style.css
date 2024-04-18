@@ -92,6 +92,9 @@ body {
   padding-bottom: 50px;
 }
 /*프로젝트*/
+.project-section {
+  margin-bottom: 200px;
+}
 .projectContainer {
   display: grid;
   align-items: center;
