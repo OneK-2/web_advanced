@@ -5,67 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="profile-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!--메뉴바는 그냥 nav로 하고 헤더에 자기소개 ㄱ-->
     <!-- 상단 메뉴바 -->
     <header>
-      <nav>
-        <img
-          src="https://cdn.pixabay.com/photo/2020/09/16/18/39/icon-5577198_960_720.png"
-          width="50"
-          alt="logo"
-        />
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Tech Stack</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+      <nav class="top-nav">
+        <div class="top-logo">
+          <img src="./images/007-logo.svg" alt="007logo" />
+        </div>
+
+        <ul class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tech Stack</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="top-sns">
+          <a href="#"><img src="" alt="" /></a>
+          <a href="#"><img src="" alt="" /></a>
+          <a href="#"><img src="" alt="" /></a>
+        </div>
       </nav>
     </header>
+
     <section>
       <!-- 자기소개 -->
 
       <div class="introduce">
-        <p>안녕하세요! 제이름은 이원규 입니다.</p>
+        <div class="intro-txt">
+          <p>
+            Hi! <br />
+            My Name is <br />
+            <span class="name">Wonkyu Lee</span> <br />
+            I build things for Web
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="./images/profile_dog.png" alt="profile_dog" />
+        </div>
       </div>
 
       <br />
       <!-- 테크 스택 -->
       <div class="techStack">
-        <h1>My Tech Stack</h1>
+        <p class="title-txt">My Tech Stack</p>
 
-        <img src="./images/html-logo.svg" width="50" alt="html logo" />
-        <img src="./images/css-logo.svg" width="50" alt="css logo" />
-        <img src="./images/js-logo.svg" width="50" alt="Js logo" />
-        <img
-          src="https://cdn.iconscout.com/icon/free/png-256/free-java-2038875-1720088.png?f=webp"
-          width="55"
-          alt="Java logo"
-        />
-        <img src="./images/spring-3.svg" width="50" alt="spring logo" />
+        <div class="icon-grid">
+          <div class="icon">
+            <img src="./images/html-logo.svg" alt="html logo" />
+          </div>
+          <div class="icon">
+            <img src="./images/css-logo.svg" alt="css logo" />
+          </div>
+          <div class="icon">
+            <img src="./images/js-logo.svg" alt="Js logo" />
+          </div>
+          <div class="icon">
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/free-java-2038875-1720088.png?f=webp"
+              alt="Java logo"
+            />
+          </div>
+          <div class="icon">
+            <img src="./images/spring-3.svg" alt="spring logo" />
+          </div>
+          <div class="icon">
+            <img src="./images/AWS-Logo.svg" alt="aws-logo" />
+          </div>
+          <div class="icon">
+            <img src="./images/oracle-logo.svg" alt="oracle-logo" />
+          </div>
+          <div class="icon">
+            <img src="./images/docker-icon.svg" alt="doker" />
+          </div>
+          <div class="icon">
+            <img src="./images/logos_react.svg" alt="react" />
+          </div>
+          <div class="icon">
+            <img src="./images/git-logo.svg" alt="git-logo" />
+          </div>
+        </div>
       </div>
 
-      <br />
-      <br />
-      <br />
       <!-- 프로젝트 -->
-      <div class="projectContainer">
-        <h1>Projects</h1>
-        <div class="projectRow">
-          <div class="project">
-            <img src="./images/pj1-logo.png" width="60" alt="project-logo" />
-            <h3>1번</h3>
-            <p>프로젝트 1번</p>
+      <div class="project-section">
+        <p class="title-txt">Projects</p>
+
+        <div class="projectContainer">
+          <div class="project-items">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>Project No.1</h4>
+              <p class="project-desc">
+                프로젝트 1번입니다. 내용이 쭉쭉 들어갈건데 뭘적을지 모르겠어요
+              </p>
+              <div class="project-tech-stack">
+                기술스택: React, Webapp, Github, AWS S3
+              </div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./images/icons/link-chain.svg" />
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./images/git-logo.svg" />
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project">
-            <img src="./images/pj2-logo.png" width="60" alt="project2-logo" />
-            <h3>2번</h3>
-            <p>프로젝트 2번</p>
+          <div class="project-items">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>Project No.2</h4>
+              <p class="project-desc">
+                프로젝트 2번 내용이 쭉쭉 들어갈건데 뭘적을지 모르겠어요
+              </p>
+              <div class="project-tech-stack">
+                기술스택: React, Webapp, Github, AWS S3
+              </div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./images/icons/link-chain.svg" />
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./images/git-logo.svg" />
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-items">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>Project No.3</h4>
+              <p class="project-desc">
+                프로젝트 3번 내용이 쭉쭉 들어갈건데 뭘적을지 모르겠어요
+              </p>
+              <div class="project-tech-stack">
+                기술스택: React, Webapp, Github, AWS S3
+              </div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                <a href="#">
+                  <img src="./images/icons/link-chain.svg" />
+                  <div>Notion</div>
+                </a>
+                <a href="#">
+                  <img src="./images/git-logo.svg" />
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-upper">
+        <img class="footer-logo" src="./images/007-logo.svg" alt="logo" />
+        <div class="footer-content">
+          <div class="footer-contact">
+            <a href="tel:+1234567890">010-1234-5678</a>
+            <a href="mailto:cookie00421@gmail.com">cookie00421@gmail.com</a>
+            <div class="footer-sns">
+              <a href="https://github.com/OneK-2" target="_blank">
+                <img src="./images/git-logo.svg" alt="github" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/koominjeong/"
+                target="_blank"
+              >
+                <img src="./images/linkenin-slogo.svg" alt="linkedin" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hr"></div>
+    </footer>
   </body>
 </html>

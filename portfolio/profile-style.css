@@ -1,0 +1,205 @@
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  min-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.nav-items li a {
+  text-decoration-line: none;
+  color: black;
+}
+.top-logo {
+  display: flex;
+  margin-left: 10%;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 10px;
+}
+
+.introduce {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+.intro-img {
+  max-width: 100%;
+  height: auto;
+}
+.intro-txt {
+  margin-left: 100px;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.name {
+  background: linear-gradient(
+    120deg,
+    #13b0f5 -2.06%,
+    #e353f7 100%
+  ); /*deg는 그라데이션 각도*/
+  background-clip: text;
+  color: transparent;
+}
+/* 테크 스택 */
+.techStack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 300px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  gap: 50px;
+  justify-content: stretch;
+  align-content: stretch;
+  place-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.icon {
+  width: 100px; /* 아이콘 너비 */
+  height: 100px; /* 아이콘 높이 */
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.icon img {
+  width: 100%;
+}
+.title-txt {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+/*프로젝트*/
+.project-section {
+  margin-bottom: 200px;
+}
+.projectContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 0 150px;
+}
+
+.project-items {
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.project-thumbnail {
+  width: 100%;
+  height: 256px;
+  /* 위쪽 둥글게 둥글게 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* 배경 이미지 가운데 정렬, 가득차게 */
+  background-image: url("https://source.unsplash.com/random/400×400");
+  background-position: center;
+  background-size: cover;
+}
+.project-content {
+  padding: 30px;
+  /* 세로 간격(gap)을 일정하게 주기 위해 flex 적용 */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project-content h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.project-desc {
+  font-size: 18px;
+  font-weight: 300;
+}
+.project-tech-stack {
+  font-size: 16px;
+  font-weight: 400;
+}
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.project-link img {
+  height: 20px;
+}
+.project-link a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px;
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 97px;
+  height: 59px;
+}
+.footer-contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  /* 텍스트 스타일 */
+  color: #42446e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer-contact a {
+  /* 기본속성으로 적용되어 있는 언더라인 제거 */
+  color: #42446e;
+  text-decoration: none;
+}
+.footer-sns {
+  display: flex;
+  gap: 20px;
+}
+.footer-sns img {
+  height: 20px;
+}
+.hr {
+  border: solid 1px;
+  width: 100%;
+  margin: 10px;
+}
