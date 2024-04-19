@@ -294,8 +294,8 @@ body {
 footer {
   display: flex;
   flex-direction: column;
-  margin: 0 100px;
   padding-bottom: 50px;
+  gap: 52px;
 }
 .footer-content {
   display: flex;
@@ -334,5 +334,17 @@ footer {
 .hr {
   border: solid 1px;
   width: 100%;
-  margin: 20px;
+}
+@media (max-width: 768px) {
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  .footer-contact .tel {
+    display: none;
+  }
+  footer {
+    gap: 24px;
+  }
 }
