@@ -4,7 +4,7 @@ html {
   font-style: normal;
 }
 body {
-  min-width: 480px;
+  max-width: 1228px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -13,6 +13,7 @@ body {
     padding: 0 12px;
   }
 }
+/* 메뉴바 */
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -69,23 +70,24 @@ body {
   width: 30px;
   height: 30px;
 }
-
+/* 소개 */
 .introduce {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 100px;
+  padding-top: 200px;
 }
 .intro-img {
   max-width: 100%;
   height: auto;
 }
 .intro-txt {
-  margin-left: 100px;
-  font-size: 32px;
+  font-size: 58px;
   font-weight: bold;
   display: flex;
-  align-items: center;
+  line-height: 70px;
+  letter-spacing: -1px;
 }
 .name {
   background: linear-gradient(
@@ -95,6 +97,26 @@ body {
   ); /*deg는 그라데이션 각도*/
   background-clip: text;
   color: transparent;
+}
+@media (max-width: 768px) {
+  .introduce {
+    display: flex;
+    padding-top: 68px;
+    padding-bottom: 160px;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .intro-txt {
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .intro-img {
+    display: flex;
+    align-items: center;
+  }
 }
 /* 테크 스택 */
 .techStack {
@@ -112,8 +134,6 @@ body {
   justify-content: stretch;
   align-content: stretch;
   place-items: center;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 .icon {
@@ -132,6 +152,65 @@ body {
   text-align: center;
   padding-bottom: 50px;
 }
+
+/* grid 반응형 대응 */
+@media (max-width: 1240px) {
+  .projectContainer {
+    /*   grid-gap: 48px 60px; */
+    grid-gap: 16px 24px;
+  }
+  .icon-grid {
+    /*   grid-gap: 60px; */
+    grid-gap: 24px;
+  }
+}
+@media (max-width: 1120px) {
+  .projectContainer {
+    grid-gap: 48px 60px;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 10px 16px; */
+  }
+  .icon-grid {
+    grid-gap: 48px 60px;
+    grid-template-columns: repeat(4, 1fr);
+    /*   grid-gap: 60px; */
+  }
+}
+@media (max-width: 1024px) {
+  .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 48px 60px;
+  }
+  .icon-grid {
+    /*   grid-gap: 60px; */
+  }
+}
+
+@media (max-width: 768px) {
+  .projectContainer {
+    /*   grid-gap: 48px 60px; */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px 30px;
+  }
+  .icon-grid {
+    grid-gap: 48px 60px;
+    grid-template-columns: repeat(3, 1fr);
+    /*   grid-gap: 60px; */
+  }
+}
+
+@media (max-width: 480px) {
+  .projectContainer {
+    /*   grid-gap: 48px 60px; */
+    grid-gap: 24px 30px;
+  }
+  .icon-grid {
+    grid-gap: 48px 60px;
+    grid-template-columns: repeat(2, 1fr);
+    /*   grid-gap: 60px; */
+  }
+}
+
 /*프로젝트*/
 .project-section {
   margin-bottom: 200px;
@@ -243,62 +322,4 @@ footer {
   border: solid 1px;
   width: 100%;
   margin: 20px;
-}
-
-/* grid 반응형 대응 */
-@media (max-width: 1240px) {
-  .projectContainer {
-    /*   grid-gap: 48px 60px; */
-    grid-gap: 16px 24px;
-  }
-  .icon-grid {
-    /*   grid-gap: 60px; */
-    grid-gap: 24px;
-  }
-}
-@media (max-width: 1120px) {
-  .projectContainer {
-    grid-gap: 48px 60px;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-gap: 10px 16px; */
-  }
-  .icon-grid {
-    grid-gap: 48px 60px;
-    grid-template-columns: repeat(4, 1fr);
-    /*   grid-gap: 60px; */
-  }
-}
-@media (max-width: 1024px) {
-  .projectContainer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 48px 60px;
-  }
-  .icon-grid {
-    /*   grid-gap: 60px; */
-  }
-}
-
-@media (max-width: 768px) {
-  .projectContainer {
-    /*   grid-gap: 48px 60px; */
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 24px 30px;
-  }
-  .icon-grid {
-    grid-gap: 48px 60px;
-    grid-template-columns: repeat(3, 1fr);
-    /*   grid-gap: 60px; */
-  }
-}
-
-@media (max-width: 480px) {
-  .projectContainer {
-    /*   grid-gap: 48px 60px; */
-    grid-gap: 24px 30px;
-  }
-  .icon-grid {
-    grid-gap: 48px 60px;
-    grid-template-columns: repeat(2, 1fr);
-    /*   grid-gap: 60px; */
-  }
 }
